@@ -18,6 +18,11 @@ pipeline{
             echo "sub-job2 task"
           }
         }
+        stage('sub-job3'){
+            steps{
+                echo "sub-job3 task"
+            }
+        }
       }
     }
     stage('version-check'){
